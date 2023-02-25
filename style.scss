@@ -1,0 +1,786 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.root{
+
+
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    .logo{
+        margin-left: 122px;
+        font-family: 'Playfair Display', serif;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 400;
+        display: flex;
+        color: #555248;
+        align-items: center;
+        
+    }
+    height: 70px;
+    .header-flex-content{
+        flex: 1;
+    }
+    
+    ul{
+        display: flex;
+
+        li{
+            a{
+                color: #555248;
+                text-decoration: none;
+            }
+            
+            list-style: none;
+        }
+
+    }
+    .header-flex-content{
+        
+        .nav-category{
+            
+            .nav-categories{
+                margin-left: 60px;
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .header-icons{
+        margin-left: 200px;
+        
+        .header-icon{
+            margin-left: 30px;
+            cursor: pointer;
+        }
+    }
+}
+.main{
+    .main-content{
+        position: relative;
+        height: 700px;
+        overflow: hidden;
+        .main-landing{
+            position: absolute;
+            width: 343px;
+            height: 48px;
+            left: 185px;
+            top: 300px;
+            h1, h2{
+                font-family: 'Playfair Display', serif;
+                font-weight: 400;
+            }
+            h1{
+                font-size: 42px;
+            }
+            h2{
+                font-size: 30px;
+                margin-top: 12px;
+            }
+            font-family: 'Roboto', sans-serif;
+            .landing-p-1{
+                margin-top: 40px;
+            }
+            button{
+                margin-top: 65px;
+                width: 205px;
+                height: 64px;
+                background-color: #444240;
+                border: none;
+                color: #fff;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+
+
+            
+        }
+        .main-banner{
+            .banner-content{
+                position: absolute;
+                width: 496px;
+                height: 940px;
+                left: 469px;
+                top: -9px;
+                background: url("./assets/eclipse.svg");
+            }
+            .watch{
+                width: 500px;
+                height: 800px;
+                position: absolute;
+                left: 193px;
+                background: url("./assets/watch_main.png");
+                mix-blend-mode: normal;
+                transform: rotate(-0.18deg);
+            }
+            .banner-ruble{
+                position: absolute;
+                left: 100px;
+                top: 223px;
+                display: flex;
+                .banner-cost{
+                    font-size: 16px;
+                    font-weight: 400;
+                    height: 13px;
+                    font-family: 'Prata', serif;
+                }
+                svg{
+                    margin-top: 2px;
+                    margin-left: 7px;
+                }
+                .line{
+                    margin-top: 8px;
+                    margin-left: 16px;
+                    width: 50px;
+                    height: 0px;
+                    border: 1px solid #8B8371;
+
+                }
+                
+            }
+            .banner-mm{
+                position: absolute;
+                width: 200px;
+                height: 16px;
+                top: 650px;
+                left: 600px;
+
+                display: flex;
+                span{
+                    font-family: 'Prata', serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    color: #444240;
+                }
+                .line{
+                    margin-top: 8px;
+                    margin-right: 16px;
+                    width: 50px;
+                    height: 0px;
+                    border: 1px solid #8B8371;
+                }
+            }
+        }
+    }
+}
+.information{
+    
+    .information-clock{
+        font-family: 'Playfair Display', serif;
+        height: 720px;
+        color: #1B1A17D1;
+        .information-header{
+            margin-top: 80px;
+            text-align: center;
+            .allwatches{
+                position: absolute;
+                top: 895px;
+                left: 85%;
+                font-size: 16px;
+                a{
+                    text-decoration: none;
+                    color: #444240;
+                }
+                font-family: 'Roboto';
+
+            }
+        }
+        .watch-card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+            margin-top: 100px;
+            .image{
+                width: 310px;
+                height: 310px;
+                background: url("./assets/watch-eclipse.svg");
+                img{
+                   
+                }
+            }
+            .name{
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 24px;
+            }
+            .about{
+                display: flex;
+                
+                span{
+                    margin-left: 18px;
+                    margin-top: 5px;
+                    cursor: pointer;
+                    
+                }:hover{
+                    text-decoration: underline;
+                }
+            }
+            
+            .card-2{
+                margin-left: 60px;
+            }
+            .card-3{
+                margin-left: 80px;
+            }
+        }   
+    }
+    .information-banner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 519px;
+        background:  #F7F5EF;
+        .photo-banner{
+            z-index: 2;
+        }
+        .header-banner{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 30px;
+            z-index: 2;
+            width: 370px;
+            h2{
+                font-size: 32px;
+                font-family: 'Playfair Display', serif;
+            }
+            .descipt-banner{
+                font-size: 16px;
+                font-family: 'Roboto', sans-serif;
+                margin-top: 35px;
+                .button-banner{
+                    width: 205px;
+                    margin-top: 45px;
+                    height: 64px;
+                    background: #D4B098;
+                    border: none;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+            
+        }
+        .lines-banner{
+            width: 1038px;
+            height: 519px;
+            background: #FDFDFB;
+            position: absolute;
+            z-index: 1;
+            left: 480px;
+            top: 1570px;
+            .eclipse-1{
+                position: absolute;
+                left: 820px;
+                    
+            }
+            .eclipse-2{
+                position: absolute;
+                left: 780px;
+                top: 10px;
+
+            }
+        }
+
+    }
+    .information-collage{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+        height: 631px;
+        .collage-photos{
+            display: flex;
+            
+            
+            .collage-column{
+                display: flex;
+                flex-direction: column;
+                margin-left: 105px;
+                img{
+                    width: 242px;
+                    
+                }
+                .coll-i2{
+                    margin-top: 10px;
+                }
+            }
+            .collage-box{
+                img{
+                    width: 377px;
+                    margin-left: 10px;
+                }
+            }
+        }
+        .collage-header{
+            width: 471px;
+            h2{
+                font-size: 32px;
+                font-family: 'Playfair Display', serif;
+                line-height: 43px;
+                font-weight: 400;
+            }
+            .collage-descript{
+                width: 370px;
+                margin-top: 40px;
+                p{
+                    font-family: 'Roboto';
+                    font-size: 16px;
+                }
+                
+            }
+            .collage-icons{
+                margin-top: 105px;
+                .collage-icon{
+                    margin-left: 16px;
+                }
+            }
+            
+        }
+    }
+}
+.footer{
+    width: 100%;
+    height: 275px;
+    background-color: #444240;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    
+    justify-content: center;
+    .column-1{
+        font-family: 'Roboto', serif;
+        font-weight: 700;
+        font-size: 12px;
+        margin-bottom: 32px;
+        .logo{
+            
+            span{
+                font-size: 14px;
+                font-family: 'Playfair Display', sans-serif;
+                text-transform: uppercase;
+            }
+
+
+        }
+        .footer-head{
+            font-size: 14px;
+            font-family: 'Playfair Display', sans-serif;
+            margin-bottom: 32px;
+        }
+        .footer-side{
+            margin-bottom: 30px;
+        }
+        
+        
+    }
+    .column-2{
+        margin-left: 70px;
+        font-size: 12px;
+        font-weight: 700;
+        .footer-head{
+            font-size: 14px;
+            font-family: 'Roboto', serif;
+            text-transform: uppercase;
+            font-weight: 700;
+            
+            margin-bottom: 31px;
+            
+        }
+        .footer-side{
+            margin-bottom: 14px;
+        }
+            
+    }
+    .column-3{
+        margin-left: 100px;
+        font-size: 12px;
+        font-weight: 700;
+        .footer-head{
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: 'Roboto', serif;
+            font-weight: 700;
+            margin-bottom: 31px;
+        }
+        .footer-side{
+            margin-bottom: 14px;
+        }
+        
+    }
+    .column-4{
+        margin-left: 160px;
+        font-size: 12px;
+        font-weight: 700;
+        .footer-head{
+            text-transform: uppercase;
+            font-size: 14px;
+            font-family: 'Roboto', serif;
+            font-weight: 700;
+            margin-bottom: 31px;
+        }
+        .footer-side{
+            margin-bottom: 14px;
+        }
+        
+        
+
+    }
+    
+    li{
+        list-style: none;
+    }
+}
+.mobile-footer{
+    display: none;
+}
+.mobile-header{
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+    .header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        margin-right: 100px;
+        font-size: 20px;
+    }
+    .header-flex-content {
+        font-size: 16px;
+    }
+    .nav-category {
+        margin-top: 30px;
+    }
+    .nav-categories {
+    }
+    .header-icons {
+        margin-right: 200px;
+        margin-top: 20px;
+    }
+    .header-icon {
+    }
+    .i-1 {
+    }
+    .i-2 {
+    }
+    .circle {
+    }
+    .i-3 {
+    }
+    .main {
+    }
+    .main-content {
+    }
+    .main-landing {
+    }
+    .landing-p-1 {
+    }
+    .main-banner {
+    }
+    .banner-content {
+        display: none;
+    }
+    .banner-ruble {
+    }
+    .banner-cost {
+    }
+    .line {
+    }
+    .watch {
+    }
+    .banner-mm {
+    }
+    .information {
+    }
+    .information-clock {
+    }
+    .information-header {
+    }
+    .allwatches {
+        
+    }
+    .watch-card {
+        display: flex;
+        flex-direction: column;
+    }
+    .card-1 {
+    }
+    .name {
+    }
+    .cost {
+    }
+    .image {
+    }
+    .about {
+    }
+    .card-2 {
+    }
+    .card-3 {
+    }
+    .information-banner {
+        position: static;
+        margin-top: 600px;
+        width: 100%;
+    }
+    .photo-banner {
+        position: static;
+    }
+    .header-banner {
+        position: static;
+    }
+    .descipt-banner {
+        position: static;
+    }
+    .button-banner {
+    }
+    .lines-banner {
+        display: none;
+    }
+    .eclipse-1 {
+    }
+    .eclipse-2 {
+    }
+    .information-collage {
+        display: flex;
+        flex-direction: column;
+    }
+    .collage-header {
+    }
+    .collage-descript {
+    }
+    .collage-icons {
+    }
+    .collage-icon {
+    }
+    .collage-photos {
+        margin-top: 40px;
+    }
+    .collage-column {
+
+    }
+    .coll-i2 {
+    }
+    .collage-box {
+    }
+    .footer {
+        margin-top: 160px;
+    }
+    .column-1 {
+    }
+    .footer-head {
+    }
+    .footer-side {
+    }
+    .column-2 {
+    }
+    .column-3 {
+    }
+    .column-4 {
+    }
+}
+@media screen and (max-width: 450px) and (min-width: 350px) {
+    .root {
+    }
+    .header {
+        display: none;
+    }
+    .mobile-header{
+        display: block;
+        width: 100%;
+        height: 100px;
+        nav{
+            ul{
+                display: flex;
+                align-items: center;
+                height: 100px;
+                
+                li{
+                    list-style: none;
+                    flex: 1;
+                    a{
+                        text-decoration: none;
+                        color: #555248;
+                    }
+                }
+            }
+        }
+    }
+    
+    .main {
+    }
+    .main-content {
+        display: none;
+    }
+    .mobile-main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 371px;
+        align-items: center;
+        justify-content: center;
+        h1, h2{
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+        }
+        h1{
+            font-size: 42px;
+        }
+        h2{
+            font-size: 30px;
+            margin-top: 12px;
+        }
+        .landing-p-1{
+            margin-top: 30px;
+        }
+        p{
+            font-family: 'Roboto' sans-serif;
+        }
+        button{
+            margin-top: 65px;
+            width: 205px;
+            height: 64px;
+            background-color: #444240;
+            border: none;
+            color: #fff;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    }
+    .landing-p-1 {
+    }
+    
+    .line {
+    }
+    .watch {
+    }
+    .banner-mm {
+    }
+    .information {
+    }
+    .information-clock {
+    }
+    .information-header {
+    }
+    .allwatches {
+        display: none;
+    }
+    .watch-card {
+    }
+    .card-1 {
+    }
+    .name {
+    }
+    .cost {
+    }
+    .image {
+    }
+    .about {
+    }
+    .card-2 {
+        margin-top: 20px;
+    }
+    .card-3 {
+        margin-top: 20px;
+
+    }
+    .information-banner {
+        width: 100%;
+        flex-direction: column;
+        background: #fff;
+        margin-top: 800px;
+    }
+    .photo-banner {
+    }
+    .header-banner {
+        
+        margin-bottom: 0px;
+    }
+    .descipt-banner {
+    }
+    .button-banner {
+    }
+    .lines-banner {
+    }
+    .eclipse-1 {
+    }
+    .eclipse-2 {
+    }
+    .information-collage {
+        width: 100%;
+        position: absolute;
+        top: 2800px;
+    }
+    .collage-header {
+        
+        margin: auto;
+
+    }
+    .collage-descript {
+    }
+    .collage-icons {
+    }
+    .collage-icon {
+    }
+    .collage-photos {
+        flex-direction: row-reverse;
+        position: absolute;
+        top: 400px;
+        right: 200px;
+    }
+    .collage-column {
+        flex-direction: row;
+        z-index: 1;
+        img{
+            width: 100px;
+        }
+    }
+    .coll-i2 {
+    }
+    .collage-box {
+        position: absolute;
+        left: 200px;
+        img{
+            width: 140px;
+        }
+    }
+    .footer{
+    
+        display: none;
+
+
+    }
+    .mobile-footer{
+        position: absolute;
+        top: 3800px;
+        display: flex;
+        width: 111.3%;
+        background-color: #444240;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h3{
+            margin-top: 20px;
+            text-transform: uppercase;
+            font-family: 'Playfair display', sans-serif;
+            color: #fff;
+        }
+    }
+}
