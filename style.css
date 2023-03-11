@@ -391,7 +391,9 @@
 .mobile-header {
   display: none;
 }
-
+.mobile-main{
+  display: none; 
+}
 @media screen and (max-width: 1200px) {
   .header {
     width: 100%;
